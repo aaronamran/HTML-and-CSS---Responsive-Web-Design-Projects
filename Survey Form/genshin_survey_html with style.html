@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Genshin Impact Survey Form</title>
+    <style>
+	body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4d;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+</style>
+  </head>
+  <body>
+    <h1 id="title" >Genshin Impact Survey Form</h1>
+    <p id="description" >Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Qiqi" /></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="c6qiqi@gmail.com" /></label>
+        <label id="number-label">Enter Your Age: <input id="number" name="number-label" type="number" min="12" max="120" required placeholder="69"/></label>
+      
+        <label for="f2p-account"><input id="f2p-account" type="radio" name="account-type" class="inline" value="f2p" /> Free-to-Play Account</label>
+        <label for="whale-account"><input id="whale-account" type="radio" name="account-type" class="inline" value="whale" /> Whale Account</label>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Which of the following would you choose?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">JoJo Klee</option>
+            <option value="2">Crying Shogun</option>
+            <option value="3">Harem Aether</option>
+            <option value="4">Step-Childe</option>
+          </select>
+        </label>
+        <label>Which of the two checkbox options would you choose?</label>
+        <label for="nl5050" name="nl5050">
+          <input id="nl5050" type="checkbox" required name="nl5050" class="inline" value="nl5050" /> Never lose 50-50 again, but receive less primogems daily.</a>
+        </label>
+        <label for="wal" name="wal">
+          <input id="wal" type="checkbox" required name="wal" class="inline" value="wal" /> Have worse artifact RNG luck for more primogems.</a>
+        </label>
+        <label for="profile-picture">Upload a picture of your favourite character: <input id="char-picture" type="file" name="file" /></label>
+        <label for="age">Input your Adventure Rank: <input id="age" type="number" name="age" min="0" max="60" placeholder="10" /></label>
+        <label for="bio">Which artifact piece is the hardest for you to farm?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Viridescent Venerer."></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">HoYoLab Community</option>
+            <option value="2">Genshin Impact YouTube Channel</option>
+            <option value="3">Reddit</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

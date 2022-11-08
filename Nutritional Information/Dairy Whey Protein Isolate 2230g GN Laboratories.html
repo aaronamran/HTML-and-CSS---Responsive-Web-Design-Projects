@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nutrition Label</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <style>* {
+        box-sizing: border-box;
+      }
+      
+      html {
+        font-size: 16px;
+      }
+      
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      .label {
+        border: 2px solid black;
+        width: 400px;
+        margin: 20px auto;
+        padding: 0 7px;
+      }
+      
+      header h1 {
+        text-align: center;
+        margin: -4px 0;
+        letter-spacing: 0.15px
+      }
+
+      .grams {
+        font-size: 1.2rem;
+      }
+      
+      p {
+        margin: 0;
+      }
+      
+      .divider {
+        border-bottom: 1px solid #888989;
+        margin: 2px 0;
+        clear: right;
+      }
+      
+      .bold {
+        font-weight: 800;
+      }
+      
+      .right {
+        float: right;
+      }
+      
+      .rightkcal {
+        float: right;
+        font-size: 0.85rem;
+      }
+
+      .lg {
+        height: 10px;
+      }
+      
+      .lg, .md {
+        background-color: black;
+        border: 0;
+      }
+      
+      .md {
+        height: 5px;
+      }
+      
+      .sm-text {
+        font-size: 0.85rem;
+      }
+      
+      .energy h1 {
+        margin: -5px -2px;
+        overflow: hidden;
+      }
+      
+      .energy span {
+        font-size: 0.85rem;
+        margin-top: 0px;
+      }
+      
+      .indent {
+        margin-left: 1em;
+      }
+      
+      .dbl-indent {
+        margin-left: 2em;
+      }
+      
+      .daily-value p:not(.no-divider) {
+        border-bottom: 1px solid #888989;
+      }
+      
+      .note {
+        font-size: 0.6rem;
+        margin: 5px 0;
+        padding: 0 8px;
+        text-indent: -8px;
+      }
+      .ingredient {
+        font-size: 1.0rem;
+        margin: 5px 0;
+        padding: 0;
+        text-indent: 0px;
+      }
+      
+      .ingredients {
+        font-size: 0.85rem;
+        margin: 5px 0;
+        padding: 0;
+        text-indent: 0px;
+      }
+      
+      </style>
+  </head>
+  <body>
+    <div class="label">
+      <header>
+        <h1 class="bold">Nutrition Information</h1>
+        <div class="divider"></div>
+        <p class="bold grams">2230 g</p>
+        <p>Serving size 1 Rounded Scoop (30 g)</p>
+        <p>Servings Per Container 74</p>
+        
+      </header>
+      <div class="divider lg"></div>
+      <div class="energy">
+        <p class="bold sm-text">Amount Per Serving</p>
+        <div class="divider"></div>
+        <p>Energy<span class="rightkcal">113 kcal / 477 kJ per Serving</span></p>
+      </div>
+      <div class="divider md"></div>
+      <div class="daily-value sm-text">
+        <p class="right bold no-divider">% Daily Value *</p>
+        <div class="divider"></div>
+        <p><span class="bold">Total Fat</span><span class="bold right">1.1g</span></p>
+        <p class="indent no-divider">Saturated Fat<span class="bold right">0.8g</span></p>
+        <div class="divider"></div>
+        <p><span class="bold">Total Carbohydrate</span><span class="right bold">2.3g</span></p>
+        <p class="indent no-divider">of which sugars<span class="bold right">2.0g</span></p>
+        <div class="divider"></div>
+        <p><span class="bold">Fibre</span><span class="right bold">0.2g</span></p>
+        <p class="no-divider"><span class="bold">Protein</span><span class="bold right">23.4g</span></p>
+        <div class="divider"></div>
+        <p class="no-divider"><span class="bold">Salt</span><span class="right bold">0.1g</span></p>
+        <div class="divider lg"></div>
+        <p class="no-divider"><span class="bold">Amino acid composition</span></p>
+        <p class="no-divider">(Protein) pro 30g</p>
+        <div class="divider"></div>
+        <p>Isoleucine (BCAA) <span class="right">1455mg</span></p>
+        <p>Leucine (BCAA) <span class="right">2409mg</span></p>
+        <p>Valine (BCAA) <span class="right">1341mg</span></p>
+        <p>Lysine <span class="right">2182mg</span></p>
+        <p>Methionine <span class="right">500mg</span></p>
+        <p>Histidine <span class="right">386mg</span></p>
+        <p>Phenylalanine <span class="right">682mg</span></p>
+        <p>Threonine <span class="right">1523mg</span></p>
+        <p>Trytophan <span class="right">318mg</span></p>
+        <p>Alanine <span class="right">1136mg</span></p>
+        <p>Arginine <span class="right">477mg</span></p>
+        <p>Aspartic acid <span class="right">2500mg</span></p>
+        <p>Cysteine <span class="right">500mg</span></p>
+        <p>Glutamic acid <span class="right">4114mg</span></p>
+        <p>Glycine<span class="right">275mg</span></p>
+        <p>Proline <span class="right">1250mg</span></p>
+        <p>Serine <span class="right">1045mg</span></p>
+        <p class="no-divider">Tyrosine <span class="right">591mg</span></p>
+      </div>
+      <div class="divider md"></div>
+      <p class="note">Not a Significant Source of Dietary Fiber </p>
+      <p class="note">* Percent Daily Values are based on a 2,000 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs.</p>
+      <div class="divider"></div>
+      <p class="bold ingredient">Ingredients</p>
+      <p class="ingredients">53.4% whey protein concentrate (contains emulsifier: lecithin (sunflower)), 40.0% whey protein isolate (contains emulsifier: lecithin (sunflower)), strawberry fruit powder, flavouring, thickener: xanthan, beetroot root powder, salt, sweetener: Sucralose and Acesulfam K.</p>
+    </div>
+  </body>
+</html>
